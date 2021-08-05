@@ -1,0 +1,11 @@
+// Header
+.header {
+  position: relative;
+  padding: 2rem;
+  height: 70vh;
+  background: url(../images/bg-pattern-intro.svg) no-repeat,
+              linear-gradient(to bottom right, $lighter-red, $lightRed);
+  background-size: 200%;
+  background-position: center;
+  border-radius: 0 0 0 9rem;
+}
