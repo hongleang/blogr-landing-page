@@ -1,0 +1,71 @@
+// Main
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.article{
+  margin: 4rem 0;
+  &--header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $veryDarkBlue;
+  }
+  &--description {
+    color: $veryDarkGrayishBlue;
+    font-size: .8rem;
+    font-weight: 200;
+    line-height: 2;
+  }
+}
+.section__img {
+  width: 100%;
+}
+
+// Second section
+.second-section {
+  position: relative;
+  height: 40rem;
+  margin-bottom: 5rem;
+  &__img {
+    width: 100%;
+  }
+  &__header{
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    
+  }
+  &__content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10rem;
+    width: 120%;
+    height: 32rem;
+    background: url(../images/bg-pattern-circles.svg) no-repeat, $veryDarkBlackBlue;
+    background-size: 140%;
+    background-position-y: -230px;
+    z-index: -2;
+    background-position-x: center;
+    border-bottom-left-radius: 8rem;
+  }
+}
+
+.text--white {
+  margin-top: 0;
+  color: white;
+}
