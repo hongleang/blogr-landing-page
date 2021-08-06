@@ -13,10 +13,10 @@
 <body>
   <div class="modal">
     <ul class="dropdown">
-      <li class="dropdown-item" onclick="">
-        Product <span><img src="./images/icon-arrow-dark.svg" alt=""></span>
+      <li class="dropdown-item">
+        Product <span><img src="./images/icon-arrow-dark.svg" alt="" class="arrow"></span>
       </li>
-      <ul class="dropdown-item__childrens active">
+      <ul class="dropdown-item__childrens">
         <li>Overview</li>
         <li>Pricing</li>  
         <li>Marketplace</li>
@@ -24,7 +24,7 @@
         <li>Integrations</li>
       </ul>
       <li class="dropdown-item">
-        Company <span><img src="./images/icon-arrow-dark.svg" alt=""></span>
+        Company <span><img src="./images/icon-arrow-dark.svg" alt="" class="arrow"></span>
       </li>
       <ul class="dropdown-item__childrens">
         <li>About</li>
@@ -33,7 +33,7 @@
         <li>Careers</li>
       </ul>
       <li class="dropdown-item">
-        Connect <span><img src="./images/icon-arrow-dark.svg" alt=""></span>
+        Connect <span><img src="./images/icon-arrow-dark.svg" alt="" class="arrow"></span>
       </li>
       <ul class="dropdown-item__childrens">
         <li>Contact</li>
@@ -56,7 +56,9 @@
           <img src="./images/logo.svg" alt="logo" class="logo">
         </div>
         <div class="navbar__right">
-          <img src="./images/icon-hamburger.svg" alt="icon-hamburger" class="hamburgure-icon">
+          <button class="btn hamburger-btn">
+            <img src="./images/icon-hamburger.svg" alt="icon-hamburger" class="hamburger-icon">
+          </button>
         </div>
       </nav>
      
@@ -185,5 +187,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="./js/index.js"></script>
 </body>
 </html>

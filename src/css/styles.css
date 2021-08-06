@@ -52,6 +52,11 @@
   width: 100%;
 }
 
+.hamburger-icon {
+  width: 30px;
+  height: 26px;
+}
+
 .hero {
   display: flex;
   justify-content: center;
@@ -290,7 +295,14 @@ a {
   margin: 0 auto;
   padding: 2rem;
   background: white;
+  transform-origin: top;
+  opacity: 0;
   z-index: 10;
+  transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.modal.active {
+  opacity: 1;
 }
 
 .dropdown {
@@ -326,6 +338,16 @@ a {
   color: #4b5862;
   background-color: #d8d8d8;
   border-radius: .7rem;
+}
+
+.arrow {
+  transform-origin: center;
+  transform: rotate(0);
+  transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.arrow.active {
+  transform: rotate(180deg);
 }
 
 .registeration .btn--gradient {

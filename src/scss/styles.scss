@@ -59,7 +59,14 @@ a {
   margin: 0 auto;
   padding: 2rem;
   background: $white;
+  transform-origin: top;
+  opacity: 0;
   z-index: 10;
+  transition: opacity .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &.active {
+    opacity: 1;
+  }
 }
 
 .dropdown {
@@ -94,6 +101,16 @@ a {
     color: $veryDarkGrayishBlue;
     background-color: rgb(216, 216, 216);
     border-radius: .7rem;
+  }
+}
+
+.arrow {
+  transform-origin: center;
+  transform: rotate(0);
+  transition: transform .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &.active {
+    transform: rotate(180deg);
   }
 }
 
