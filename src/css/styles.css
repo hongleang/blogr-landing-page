@@ -1,5 +1,40 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
+.btn {
+  background: none;
+  border: none;
+  padding: 1rem 1.2rem;
+  border-radius: 5rem;
+  font-size: .8rem;
+  font-weight: 900;
+  transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn--primary {
+  color: #ff3d54;
+  background: white;
+}
+
+.btn--primary:hover {
+  color: #ff7a85;
+}
+
+.btn--gradient {
+  color: white;
+  background: linear-gradient(45deg, #ff8f70, #ff3d54);
+  background: red;
+}
+
+.btn--outline {
+  color: white;
+  border: 2px solid white;
+}
+
+.btn--outline:hover {
+  color: #ff3d54;
+  background: white;
+}
+
 .header {
   position: relative;
   padding: 2rem;
@@ -41,13 +76,13 @@
   font-weight: 100;
 }
 
-.hero .btn-wrapper {
+.btn-wrapper {
   display: flex;
   justify-content: space-around;
   width: 100%;
 }
 
-.hero .btn {
+.btn {
   background: none;
   border: none;
   padding: 1rem 1.2rem;
@@ -57,21 +92,21 @@
   transition: 0.6s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-.hero .btn--primary {
+.btn--primary {
   color: #ff3d54;
   background: white;
 }
 
-.hero .btn--primary:hover {
+.btn--primary:hover {
   color: #ff7a85;
 }
 
-.hero .btn--outline {
+.btn--outline {
   color: white;
   border: 2px solid white;
 }
 
-.hero .btn--outline:hover {
+.btn--outline:hover {
   color: #ff3d54;
   background: white;
 }
@@ -113,14 +148,14 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 7rem;
+  margin-top: 10rem;
   margin-bottom: 5rem;
   height: auto;
 }
 
 .second-section .section__img {
   position: absolute;
-  top: -150px;
+  top: -170px;
   width: 100%;
 }
 
@@ -143,6 +178,8 @@
   overflow: hidden;
   background: linear-gradient(to bottom right, #2c2d3f, #3f4164);
   background-size: 140%;
+  border-bottom-left-radius: 7rem;
+  border-top-right-radius: 7rem;
   z-index: -1;
 }
 
@@ -160,6 +197,45 @@
 .text--white {
   margin-top: 0;
   color: white;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #25252d;
+  border-top-right-radius: 7rem;
+}
+
+.footer-section img {
+  margin: 1rem 0;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  line-height: 2;
+}
+
+.footer-item {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.footer-item__childrens {
+  margin-top: .5rem;
+  font-size: .7rem;
+  font-weight: 200;
+}
+
+.footer-item__childrens li a {
+  color: #c8c8cb;
+}
+
+.footer-item__childrens li a:hover {
+  color: #4b5862;
 }
 
 .layout {
@@ -203,46 +279,61 @@ a {
   transition: .4s ease-out;
 }
 
+.modal {
+  display: block;
+  position: absolute;
+  width: 85%;
+  height: auto;
+  top: 7rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2rem;
+  background: white;
+  z-index: 10;
+}
+
 .dropdown {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #4b5862;
+  line-height: 2.5;
+}
+
+.dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown-item span img {
+  margin-left: .5rem;
+  width: .7rem;
+}
+
+.dropdown-item__childrens {
   display: none;
 }
 
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.dropdown-item__childrens.active {
+  display: block;
+  margin: 1rem auto;
   padding: 2rem;
-  background-color: #25252d;
-  border-top-right-radius: 7rem;
-}
-
-.footer-section img {
-  margin: 1rem 0;
-}
-
-.footer {
-  color: white;
-  text-align: center;
-  line-height: 2;
-}
-
-.footer-item {
-  margin-bottom: 2rem;
-  font-weight: 600;
-}
-
-.footer-item__childrens {
-  margin-top: .5rem;
-  font-size: .7rem;
-  font-weight: 200;
-}
-
-.footer-item__childrens li a {
-  color: #c8c8cb;
-}
-
-.footer-item__childrens li a:hover {
+  font-size: .8em;
+  font-weight: 400;
+  line-height: 2.5;
   color: #4b5862;
+  background-color: #d8d8d8;
+  border-radius: .7rem;
+}
+
+.registeration .btn--gradient {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #ff8f70, #ff3d54);
 }
 /*# sourceMappingURL=styles.css.map */

@@ -34,13 +34,13 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 7rem;
+  margin-top: 10rem;
   margin-bottom: 5rem;
   height: auto;
 
   .section__img {
     position: absolute;
-    top: -150px;
+    top: -170px;
     width: 100%;
   }
   &__header{
@@ -61,6 +61,8 @@
     overflow: hidden;
     background: linear-gradient(to bottom right, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
     background-size: 140%;
+    border-bottom-left-radius: 7rem;
+    border-top-right-radius: 7rem;
     z-index: -1;
     img {
       width: 140%;
@@ -72,22 +74,6 @@
       width: 80%;
     }
   }
-  // &__content::before {
-  //   content: "";
-  //   display: block;
-  //   position: absolute;
-  //   top: 10rem;
-  //   width: 120%;
-  //   height: 40rem;
-  //   background: url(../images/bg-pattern-circles.svg),
-  //               linear-gradient(to bottom right, $veryDarkGrayBlue, $veryDarkDesaturatedBlue);
-  //   background-size: 140%;
-  //   background-repeat: no-repeat;
-  //   background-position-y: -230px;
-  //   z-index: -2;
-  //   background-position-x: center;
-  //   border-bottom-left-radius: 8rem;
-  // }
 }
 
 .text--white {

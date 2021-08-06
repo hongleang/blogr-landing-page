@@ -1,0 +1,29 @@
+.btn {
+  background: none;
+  border: none;
+  padding: 1rem 1.2rem;
+  border-radius: 5rem;
+  font-size: .8rem;
+  font-weight: 900;
+  transition: .6s cubic-bezier(0.075, 0.82, 0.165, 1);
+  &--primary {
+    color: $lightRed;
+    background: $white;
+    &:hover {
+      color: $veryLightRed;
+    }
+  }
+  &--gradient {
+    color: white;
+    background: linear-gradient(45deg, $lighter-red, $lightRed);
+    background: red;
+  }
+  &--outline {
+    color: white;
+    border: 2px solid $white;
+    &:hover {
+      color: $lightRed;
+      background:$white;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// Footer
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: $veryDarkBlackBlue;
+  border-top-right-radius: 7rem;
+
+  img {
+    margin: 1rem 0;
+  }
+}
+
+.footer {
+  color: $white;
+  text-align: center;
+  line-height: 2;
+}
+
+.footer-item {
+  margin-bottom: 2rem;
+  font-weight: 600;
+
+  &__childrens {
+    margin-top: .5rem;
+    font-size: .7rem;
+    font-weight: 200;
+
+    li a {
+      color: $grayishBlue;
+
+      &:hover {
+        color: $veryDarkGrayishBlue;
+      }
+    }
+  }
+}

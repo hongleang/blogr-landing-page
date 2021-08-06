@@ -5,7 +5,7 @@
 // @import "base/";
 
 //Components
-// @import "components/components";
+@import "./components/components";
 
 // Layout
 @import "./layout/layout";
@@ -47,47 +47,63 @@ a {
   transition: .4s ease-out;
 }
 
-// Dropdown
-.dropdown {
-  display: none;
+// Modal
+.modal {
+  display: block;
+  position: absolute;
+  width: 85%;
+  height: auto;
+  top: 7rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding: 2rem;
+  background: $white;
+  z-index: 10;
 }
 
-// Footer
-.footer-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  background-color: $veryDarkBlackBlue;
-  border-top-right-radius: 7rem;
+.dropdown {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: $veryDarkGrayishBlue;
+  line-height: 2.5;
+}
 
-  img {
-    margin: 1rem 0;
+.dropdown-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span img {
+    margin-left: .5rem;
+    width: .7rem;
+  }
+
+  &__childrens {
+    display: none;
+  }
+
+  &__childrens.active {
+    display: block;
+    margin: 1rem auto;
+    padding: 2rem;
+    font-size: .8em;
+    font-weight: 400;
+    line-height: 2.5;
+    color: $veryDarkGrayishBlue;
+    background-color: rgb(216, 216, 216);
+    border-radius: .7rem;
   }
 }
 
-.footer {
-  color: $white;
-  text-align: center;
-  line-height: 2;
-}
-
-.footer-item {
-  margin-bottom: 2rem;
-  font-weight: 600;
-
-  &__childrens {
-    margin-top: .5rem;
-    font-size: .7rem;
-    font-weight: 200;
-
-    li a {
-      color: $grayishBlue;
-
-      &:hover {
-        color: $veryDarkGrayishBlue;
-      }
-    }
+.registeration {
+  .btn--gradient {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    padding: 1rem 2rem;
+    background: linear-gradient(45deg, $lighter-red, $lightRed);
   }
 }

@@ -19,12 +19,15 @@
     font-size: 1.2rem;
     font-weight: 100;
   }
-  .btn-wrapper {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-  }
-  .btn {
+  
+}
+.btn-wrapper {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.btn {
     background: none;
     border: none;
     padding: 1rem 1.2rem;
@@ -48,4 +51,3 @@
       }
     }
   }
-}
