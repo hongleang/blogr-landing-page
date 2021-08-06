@@ -108,17 +108,24 @@
 }
 
 .second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   position: relative;
-  height: 40rem;
+  margin-top: 7rem;
   margin-bottom: 5rem;
+  height: auto;
 }
 
-.second-section__img {
+.second-section .section__img {
+  position: absolute;
+  top: -150px;
   width: 100%;
 }
 
 .second-section__header {
-  margin: 0;
+  margin-top: 7rem;
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 600;
@@ -129,22 +136,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+  width: 121%;
+  height: 28rem;
   color: white;
+  overflow: hidden;
+  background: linear-gradient(to bottom right, #2c2d3f, #3f4164);
+  background-size: 140%;
+  z-index: -1;
 }
 
-.second-section__content::before {
-  content: "";
-  display: block;
+.second-section__content img {
+  width: 140%;
   position: absolute;
-  top: 10rem;
-  width: 120%;
-  height: 32rem;
-  background: url(../images/bg-pattern-circles.svg) no-repeat, #25252d;
-  background-size: 140%;
-  background-position-y: -230px;
-  z-index: -2;
-  background-position-x: center;
-  border-bottom-left-radius: 8rem;
+  top: -250px;
+  z-index: 0;
+}
+
+.second-section__content p {
+  width: 80%;
 }
 
 .text--white {
@@ -180,11 +190,59 @@ h4 {
   font-family: "Overpass", sans-serif;
 }
 
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
 a {
   text-decoration: none;
+  transition: .4s ease-out;
 }
 
 .dropdown {
   display: none;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #25252d;
+  border-top-right-radius: 7rem;
+}
+
+.footer-section img {
+  margin: 1rem 0;
+}
+
+.footer {
+  color: white;
+  text-align: center;
+  line-height: 2;
+}
+
+.footer-item {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.footer-item__childrens {
+  margin-top: .5rem;
+  font-size: .7rem;
+  font-weight: 200;
+}
+
+.footer-item__childrens li a {
+  color: #c8c8cb;
+}
+
+.footer-item__childrens li a:hover {
+  color: #4b5862;
 }
 /*# sourceMappingURL=styles.css.map */
