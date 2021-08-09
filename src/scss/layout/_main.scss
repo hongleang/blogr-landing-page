@@ -44,6 +44,17 @@
   border-top-right-radius: 7rem;
   border-bottom-left-radius: 7rem;
 
+  .second-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 500px;
+    z-index: -1;
+
+    background-image: url(../../images/bg-pattern-circles.svg);
+}
+
   .section__img {
     position: absolute;
     top: -200px;
@@ -64,6 +75,11 @@
       font-size: 2rem;
     }
   }
+}
+
+.bg-circle {
+  position: absolute;
+  width: 100px;
 }
 
 .text--white {

@@ -6,6 +6,30 @@
   width: 100%;
 }
 
+.navbar__right {
+  flex-grow: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-dropdown {
+  display: flex;
+  align-items: center;
+  &-item {
+    font-size: 1.1rem;
+    font-weight: 200;
+    color: $white;
+    span img {
+      margin-left: .5rem;
+      width: .7rem;
+    }
+    &__childrens {
+      display: none;
+    }
+  }
+  
+}
+
 .hamburger-icon {
   width: 30px;
   height: 26px;
@@ -15,5 +39,8 @@
   .navbar {
     max-width: 900px;
     margin: 0 auto;
+  }
+  .hamburger-icon {
+    display: none;
   }
 }
