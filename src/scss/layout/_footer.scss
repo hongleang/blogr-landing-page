@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  width: 100%;
   background-color: $veryDarkBlackBlue;
   border-top-right-radius: 7rem;
 
@@ -34,6 +35,26 @@
       &:hover {
         color: $veryDarkGrayishBlue;
       }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 60%;
+    text-align: left;
+    gap: 0 6rem;
+    &-item {
+      justify-self: center;
     }
   }
 }

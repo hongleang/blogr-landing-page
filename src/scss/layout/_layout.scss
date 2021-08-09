@@ -9,3 +9,13 @@
   width: 100%;
   height: auto;
 }
+
+
+@media screen and (min-width: 600px) {
+  .navbar,
+  .hero
+   {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}

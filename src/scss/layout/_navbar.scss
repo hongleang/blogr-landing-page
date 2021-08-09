@@ -10,3 +10,10 @@
   width: 30px;
   height: 26px;
 }
+
+@media screen and (min-width: 600px) {
+  .navbar {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
