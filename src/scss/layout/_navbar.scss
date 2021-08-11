@@ -6,15 +6,33 @@
   width: 100%;
 }
 
+.navbar__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  img {
+    margin-right: 2rem;
+  }
+}
+
 .navbar__right {
   flex-grow: 2;
   display: flex;
   justify-content: space-between;
+  
+  .btn-wrapper {
+    justify-content: flex-end;
+    
+    button:first-child {
+      margin-right: 2rem;
+    }
+  }
 }
 
 .nav-dropdown {
   display: flex;
   align-items: center;
+  margin-left: 1rem;
   &-item {
     font-size: 1.1rem;
     font-weight: 200;
