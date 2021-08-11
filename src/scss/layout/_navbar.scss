@@ -34,6 +34,7 @@
   align-items: center;
   margin-left: 1rem;
   &-item {
+    position: relative;
     font-size: 1.1rem;
     font-weight: 200;
     color: $white;
@@ -44,8 +45,27 @@
     &__childrens {
       display: none;
     }
+    &__childrens.active {
+      display: block;
+      position: absolute;
+      padding: 2rem;
+      top: 5.5rem;
+      
+      background: white;
+      border-radius: .5rem;
+      line-height: 2;
+    }
   }
-  
+}
+
+.nav-link {
+  color: $veryDarkGrayishBlue;
+  cursor: pointer;
+  &:hover {
+    font-weight: 900;
+    border-bottom: 1px solid black;
+    color: black;
+  }
 }
 
 .hamburger-icon {

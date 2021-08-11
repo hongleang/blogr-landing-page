@@ -83,6 +83,7 @@
 }
 
 .nav-dropdown-item {
+  position: relative;
   font-size: 1.1rem;
   font-weight: 200;
   color: white;
@@ -95,6 +96,27 @@
 
 .nav-dropdown-item__childrens {
   display: none;
+}
+
+.nav-dropdown-item__childrens.active {
+  display: block;
+  position: absolute;
+  padding: 2rem;
+  top: 5.5rem;
+  background: white;
+  border-radius: .5rem;
+  line-height: 2;
+}
+
+.nav-link {
+  color: #4b5862;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  font-weight: 900;
+  border-bottom: 1px solid black;
+  color: black;
 }
 
 .hamburger-icon {
